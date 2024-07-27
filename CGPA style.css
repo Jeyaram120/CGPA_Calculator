@@ -1,0 +1,48 @@
+body,header,footer{
+    /*background: linear-gradient(270deg, #FF0000,#FFA500,#FFFF00,#008000,#0000FF,#4B0082,#EE82EE);*/
+    background-size: 600% 600%;
+    -webkit-animation: ColorChange 10s ease infinite;
+    -moz-animation: ColorChange 10s ease infinite;
+    -o-animation: ColorChange 10s ease infinite;
+    animation: ColorChange 10s ease infinite;
+}
+@-webkit-keyframes ColorChange {
+    0%{background-position: 0% 50%}
+    50%{background-position: 100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes ColorChange {
+    0%{background-position: 0% 50%}
+    50%{background-position: 100% 50%}
+    100%{background-position: 0% 50%}
+}
+@-o-keyframes ColorChange {
+    0%{background-position: 0% 50%}
+    50%{background-position: 100% 50%}
+    100%{background-position: 0% 50%}
+}
+@keyframes ColorChange {
+    0%{background-position: 0% 50%}
+    50%{background-position: 100% 50%}
+    100%{background-position: 0% 50%}
+}
+input,label,button,h2,h1,select,footer{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+}
+label,h2,h1{
+    font-size: xx-large;
+    color: #ffffff;
+}
+td,th{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 100%;
+}
+h4{
+    text-align: right;
+    font-family: 'Times New Roman', Times, serif;
+    color: #d9ff00;
+}
+a{
+    color: rgb(255, 204, 102);
+}

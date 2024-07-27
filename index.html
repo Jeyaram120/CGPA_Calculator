@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CGPA Calculator</title>
+    <link rel="stylesheet" href="Mmain.css" media="screen and (max-width: 768px)">
+    <link rel="stylesheet" href="Dmain.css" media="screen and (min-width: 769px)">
+    <link rel="stylesheet" href="./CGPA style.css">
+    <script src="./refresh.js"></script>
+</head>
+<body>
+    <header>
+        <h1>R-22 CGPA Calculator</h1>
+    </header>
+    <div class="container">
+        <label for="student-name">Enter Your Name</label>
+        <input type="text" id="student-name" placeholder="Enter Student Name">
+        <h4><mark><b>*Don't Include Arrear Subjects*</b></mark></h4>
+        <div id="semester-container"></div>
+        <button onclick="addSemester()">Add Semester</button>
+        <button onclick="addSubject()" id="add-sub">Add Subject</button>
+        <button onclick="calculatePointAverage()" id="calculate-gpa-btn">Calculate GPA</button>
+        <button onclick="calculateCGPA()" id="calculate-cgpa-btn" type="submit">Calculate CGPA</button>
+        <div id="results"></div>
+        <div id="cgpa-result"></div>
+    </div>
+    <footer>
+        <p>Developed By <br> Jeyaram and Chat GPT in 24 hrs</p>
+        <a style="text-decoration: none;" href="https://forms.gle/RrVS4ofyaK7YNWHd8" target="_blank"><b>Click Here 👇<br>Suggestions and Feedback</b></a>
+    </footer>
+    <script src="./calculator.js"></script>
+</body>
+</html>
