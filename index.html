@@ -9,6 +9,15 @@
     <link rel="stylesheet" href="./CGPA style.css">
     <script src="./refresh.js"></script>
 </head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0NB77YN1MT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-0NB77YN1MT');
+</script>
 <body>
     <header>
         <h1>R-22 CGPA Calculator</h1>
@@ -18,8 +27,8 @@
         <input type="text" id="student-name" placeholder="Enter Student Name">
         <h4><mark>Don't Include Failed Subjects</mark></h4>
         <div id="semester-container"></div>
-        <button onclick="addSemester()">Add Semester</button>
         <button onclick="addSubject()" id="add-sub">Add Subject</button>
+        <button onclick="addSemester()">Add Semester</button>
         <button onclick="calculatePointAverage()" id="calculate-gpa-btn">Calculate GPA</button>
         <button onclick="calculateCGPA()" id="calculate-cgpa-btn" type="submit">Calculate CGPA</button>
         <div id="results"></div>
