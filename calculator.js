@@ -6,14 +6,18 @@ const gradePoints = {
 };
 
 function addSemester() {
-    semesterCount++;
-    subjectCount = 0;
+    if (semesterCount < 8) { // Limit to 8 semesters
+        semesterCount++;
+        subjectCount = 0;
 
-    const semesterContainer = document.getElementById('semester-container');
-    const semesterDiv = document.createElement('div');
-    semesterDiv.id = `semester-${semesterCount}`;
-    semesterDiv.innerHTML = `<h2>Semester ${semesterCount}</h2>`;
-    semesterContainer.appendChild(semesterDiv);
+        const semesterContainer = document.getElementById('semester-container');
+        const semesterDiv = document.createElement('div');
+        semesterDiv.id = `semester-${semesterCount}`;
+        semesterDiv.innerHTML = `<h2>Semester ${semesterCount}</h2>`;
+        semesterContainer.appendChild(semesterDiv);
+    } else {
+        alert('You can only add up to 8 semesters.');
+    }
 }
 
 function addSubject() {
